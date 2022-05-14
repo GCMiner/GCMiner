@@ -72,11 +72,11 @@ Complete statistical information of each approach can be found in `Data/Dataset`
 | **Library** | **Application** | **CVE-ID** | **Affected Vetrsion** | **Severity** | **Gadget Chain** |
 | --- | --- | --- | --- | --- | --- |
 | ysoserial | AspectJWeaver | <br /> | aspectjweaver:1.9.2, commons-collections:3.2.2 | <br /> | HashSet.readObject()//HashMap.put()//HashMap.hash()//TiedMapEntry.hashCode()//TiedMapEntry.getValue()//LazyMap.get()//SimpleCache$StorableCachingMap.put()//SimpleCache$StorableCachingMap.writeToPath()//FileOutputStream.write() |
-|  | ... | ... | ... | ... | ... |
-|  | Wicket1 |  | wicket-util:6.23.0, slf4j-api:1.6.4 |  | DiskFileItem.readObject() |
+| ysoserial | ... | ... | ... | ... | ... |
+| ysoserial | Wicket1 |  | wicket-util:6.23.0, slf4j-api:1.6.4 |  | DiskFileItem.readObject() |
 | ... | ... | ... | ... | ... | ... |
 | N/A | Apache OFBiz3 | CVE-2019-0189 | <16.11.01 | 9.8 CRITICAL | java.util.PriorityQueue#readObject//java.util.PriorityQueue#heapify//java.util.PriorityQueue#siftDown//java.util.PriorityQueue#siftDownUsingComparator//org.apache.commons.collections4.comparators.TransformingComparator#compare//org.apache.commons.collections4.functors.InvokerTransformer#transform//java.lang.reflect.Method#invoke |
-|  | Spring |  | spring-tx:5.2.3.RELEASE,javax.transaction:javax.transaction-api:1.2 | <br /> | SerializableTypeWrapper$MethodInvokeTypeProvider#readObject//Method#invoke//$Proxy0#newTransformer//JdkDynamicAopProxy#invoke//AopUtils#invokeJoinpointUsingReflection//Method#invoke//TemplatesImpl#newTransformer// |
+| N/A | Spring |  | spring-tx:5.2.3.RELEASE,javax.transaction:javax.transaction-api:1.2 | <br /> | SerializableTypeWrapper$MethodInvokeTypeProvider#readObject//Method#invoke//$Proxy0#newTransformer//JdkDynamicAopProxy#invoke//AopUtils#invokeJoinpointUsingReflection//Method#invoke//TemplatesImpl#newTransformer// |
 
 <a name="C2zC8"></a>
 ### Scalability
