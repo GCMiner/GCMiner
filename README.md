@@ -146,5 +146,6 @@ By using reflection, we can constrcut a highly-structured object for fuzzing. Th
 ``` 
 ├── Object RdnEntry                   
            └── field value: Object XString
-                                   └── field value: MultiUIDefaults  
+                                   └── field value: Object MultiUIDefaults  
+                                                           └── field value: Object SwingLazyValue  
 ```
