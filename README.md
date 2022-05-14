@@ -76,7 +76,7 @@ Complete statistical information of each approach can be found in `Data/Dataset`
 | ysoserial | Wicket1 |  | <6.23.0 |  | DiskFileItem.readObject() |
 | ... | ... | ... | ... | ... | ... |
 | N/A | Apache OFBiz3 | CVE-2019-0189 | <16.11.01 | 9.8 CRITICAL | java.util.PriorityQueue#readObject//java.util.PriorityQueue#heapify//java.util.PriorityQueue#siftDown//java.util.PriorityQueue#siftDownUsingComparator//org.apache.commons.collections4.comparators.TransformingComparator#compare//org.apache.commons.collections4.functors.InvokerTransformer#transform//java.lang.reflect.Method#invoke |
-| N/A | Spring |  | <5.2.3.RELEASE | <br /> | SerializableTypeWrapper$MethodInvokeTypeProvider#readObject//Method#invoke//$Proxy0#newTransformer//JdkDynamicAopProxy#invoke//AopUtils#invokeJoinpointUsingReflection//Method#invoke//TemplatesImpl#newTransformer// |
+| N/A | Spring |  | <5.2.3 | <br /> | SerializableTypeWrapper$MethodInvokeTypeProvider#readObject//Method#invoke//$Proxy0#newTransformer//JdkDynamicAopProxy#invoke//AopUtils#invokeJoinpointUsingReflection//Method#invoke//TemplatesImpl#newTransformer// |
 
 <a name="C2zC8"></a>
 ### Scalability
