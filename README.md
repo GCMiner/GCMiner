@@ -1,13 +1,9 @@
 <a name="JdLRz"></a>
 # GCMiner: Improving Java Deserialization Gadget Chain Mining via Reflection-Guided Exploit Generation
 
----
-
 Java deserialization has been shown to introduce security-critical vulnerabilities, which can lead to serious consequences due to its highly dynamic features. To alleviate this problem, existing techniques have been proposed to statically analyze the call relations to identify deserialization-related method invocations for automatically mining exploitable gadget chains. Despite being effective, analyzing only explicit call relations will miss a number of potential gadget chains, for example, some gadget chains are formed due to the dynamic behaviors (e.g., reflection invocation) in the program. Through an empirical study on 86 gadget chains from one widely-used Java deserialization collection and 18 real-world Java applications, we found that: 1) the new set of sources and sinks can help identify more potential gadget chains; and 2) a large number of gadget chain construction and exploitation rely on the reflection invocation to homonymous methods.<br />Motivated by our findings, we propose a novel gadget chain mining technique named GCMiner. First, GCMiner constructs a joint graph structure, Deserialization-Aware Code Property Graph (DA-CPG), to identify deserialization-related method invocations, and retrieves suspicious gadget chains through customized query scripts. Then, GCMiner uses a reflection-guided exploit generation strategy to produce valid object inputs to verify the exploitability of identified gadget chains. The evaluation results show that GCMiner significantly outperforms state-of-the-art tools in chains identification and verification, and discovers 54 known gadget chains that cannot be identified by the baseline approaches.
 <a name="ScN0I"></a>
 ## Prerequisites
-
----
 
 Install the necessary dependencies before running the project:
 <a name="ZRVYs"></a>
@@ -24,8 +20,6 @@ Install the necessary dependencies before running the project:
 - [JQF 1.7](https://github.com/rohanpadhye/JQF)
 <a name="KwsGN"></a>
 ## Setup
-
----
 
 This section gives the steps, explanations and examples for getting the project running.
 <a name="R4vZR"></a>
