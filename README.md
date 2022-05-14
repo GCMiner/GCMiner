@@ -32,8 +32,6 @@ This section gives the steps, explanations and examples for getting the project 
 This step is necessary for the static analysis to construct Deserialization-Aware Code Property Graph (DA-CPG) and import generated graphs into Neo4j for chain identification and verification.
 <a name="gr77a"></a>
 ## Structure
-
----
 ``` 
 ├── README.md                         <- The top-level README for developers using this project.
 ├── src/main/java
@@ -107,8 +105,6 @@ Complete statistical information of each approach can be found in `Data/Scalabil
 <a name="cu7Ib"></a>
 ## Toy Example
 
----
-
 We take the motivaing example [CVE-2021-21346](CVE-2021-21346) in [XStream](https://x-stream.github.io/index.html) to explain how GCMiner constructs an exploit object to trigger this vulnerability. The simplified gadget chain is shown below.
 ```java
 //javax.naming.ldap.Rdn$RdnEntry.class
@@ -147,8 +143,6 @@ Method `compareTo` is a _**magic method **_which will be self-executed during de
 ### Generated Explot Objects
 By using reflection, we can constrcut a highly-structured object for fuzzing. The structure of our generated object for this example is shown as follows:
 
-
----
 ``` 
 ├── Object RdnEntry                   
            └── field value: Object XString
