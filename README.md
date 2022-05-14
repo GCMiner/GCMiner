@@ -58,8 +58,6 @@ This step is necessary for the static analysis to construct Deserialization-Awar
 
 ## Dataset
 
----
-
 <a name="hm94h"></a>
 ### Benchmark
 In our experiments, we manually collect 86 known gadget chains from multiple famous Java applications. In our dataset, six types of statistical information (`Library`, `Application`, `CVE-ID`, `Affected Version`, `Severity`, `Gadget Chain`, ) are included.
@@ -147,5 +145,12 @@ public class XString extends XObject implements XMLString {
 Method `compareTo` is a _**magic method **_which will be self-executed during deserialization. It contains a `value` field which wil be used at `line 11` by `equals`. Under normal conditions, the object `RdnEntry` will invoke the method `equals` in `java.lang.Object.class`. However, although the attackers can not directly modify the source code by using dynamic binding to invoke the overriding method `equals` in `com.sun.org.apache.xpath.internal.objects.XString.class`, they can use reflection (**this is why we use reflection instead of dynamic binding here**) to dynamically invoke `equals` at `line 19` to continue the execution of this chain. By using reflection, they can modify the field `value` to an object of class `XString`. Other two dynamic reflection operations in this chain are similar.
 <a name="VlqcT"></a>
 ### Generated Explot Objects
-By using reflection, we can constrcut a highly-structured object for fuzzing.<br />The structure of our generated object for this example is shown as follows:<br />`├── Obejct RdnEntry                                         `<br />`    ├── field value: Object XString                         `<br />`                            ├── field value: Object XString `
+By using reflection, we can constrcut a highly-structured object for fuzzing. The structure of our generated object for this example is shown as follows:
 
+
+---
+``` 
+├── Object RdnEntry                   
+           └── field value: Object XString
+                                   └── field value: MultiUIDefaults  
+```
