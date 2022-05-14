@@ -34,9 +34,28 @@ This step is necessary for the static analysis to construct Deserialization-Awar
 ## Structure
 
 ---
+``` 
+├── README.md                         <- The top-level README for developers using this project.
+├── src/main/java
+│   ├── ChainValidation               <- A toy example about object generation.
+│   │   ├── Test.java                 <- Testing scripts.
+│   │   ├── data.json                 <- Identified gadget chains of CC2 in Neo4j.
+│   │   └── running example.png       <- Process of object generation.
+│   ├── Preprocess                    <- Preprocessing scripts
+│   │   └── GetChainsFromNeo4j.java   <- Loading graph data from Neo4j.
+│   └── com                           <- Running scripts.
+│       ├── result                    <- Collection of gadget chains in our benchmark.
+│       ├── ObjectGenerator.java      <- A customized generator for object generation.
+│       ├── ObjectLogic.java          <- Verify whether the sink method is reached.
+│       └── ObjectTest.java           <- Main script files.
+│
+├── Data                              <- Detailed information about our experiments.
+│   ├── Dataset.xlsx                  <- Statistical information about benchmark.
+│   └── ScalabilityData.xlsx          <- Statistical information about applications.
+│
+└── main.py                           <- Necessary dependencies for running GCMiner.
+```
 
-`├── README.md                     <- The top-level README for developers.              `<br />`├── src/main/java                                                                      `<br />`    ├── ChainValidation           <- A toy example about object generation.            `<br />`        ├── data.json             <- Identified gadget chains of CC2 in Neo4j.         `<br />`        ├── running example.png   <- Process of object generation.                     `<br />`        ├── Test.java             <- Testing scripts.                                  `<br />`    ├── com                       <- Running scripts.                                  `<br />`        ├── result                <- Collection of gadget chains in our benchmark.     `<br />`        ├── ObjectGenerator.java  <- A customized generator for object generation.     `<br />`        ├── ObjectLogic.java      <- Verify whether the sink method is reached.        `<br />`        ├── ObjectTest.java       <- Main script files.                                `<br />`    ├── Preprocess                <- Preprocessing scripts.                            `<br />`        ├── GetChainsFromNeo4j    <- Loading graph data from Neo4j.                    `<br />`├── Data                          <- Detailed information about our experiments.       `<br />`    ├── Dataset                   <- Statistical information about benchmark.          `<br />`    ├── ScalabilityData           <- Statistical information about applications.       `<br />`├── pom.xml                       <- Necessary dependencies for running GCMiner.       `
-<a name="A7Bre"></a>
 ## Dataset
 
 ---
