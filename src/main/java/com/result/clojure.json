@@ -1,0 +1,48 @@
+{
+  "results": [
+    {
+      "sourceID": 192540,
+      "sinkID": 54537,
+      "ClassName": [
+        {
+          "id": 96857,
+          "value": "clojure.lang.IFn"
+        },
+        {
+          "id": 54537,
+          "value": "clojure.main$eval_opt"
+        },
+        {
+          "id": 192540,
+          "value": "clojure.inspector.proxy$javax.swing.table.AbstractTableModel$ff19274a"
+        }
+      ],
+      "MethodName": [
+        {
+          "id": 96857,
+          "value": "invoke"
+        },
+        {
+          "id": 54537,
+          "value": "invoke"
+        },
+        {
+          "id": 192540,
+          "value": "hashCode"
+        }
+      ],
+      "Edges": [
+        {
+          "entry_id": 192540,
+          "exit_id": 96857,
+          "edge": "CALL"
+        },
+        {
+          "entry_id": 96857,
+          "exit_id": 54537,
+          "edge": "ALIAS"
+        }
+      ]
+    }
+  ]
+}

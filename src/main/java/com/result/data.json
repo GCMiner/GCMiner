@@ -1,0 +1,152 @@
+  {
+  "results": [
+    {
+      "SourceID": 42614,
+      "Sink": 70601,
+      "Edges": [
+        {
+          "Entry_id": 42614,
+          "relation": "CALL",
+          "Exit_id": 43457
+        },
+        {
+          "Entry_id": 43457,
+          "relation": "CALL",
+          "Exit_id": 160507
+        },
+        {
+          "Entry_id": 160507,
+          "relation": "CALL",
+          "Exit_id": 4513
+        },
+        {
+          "Entry_id": 4513,
+          "relation": "CALL",
+          "Exit_id": 189104
+        },
+        {
+          "Entry_id": 75978,
+          "relation": "ALIAS",
+          "Exit_id": 189104
+        },
+        {
+          "Entry_id": 75978,
+          "relation": "CALL",
+          "Exit_id": 187983
+        },
+        {
+          "Entry_id": 185872,
+          "relation": "ALIAS",
+          "Exit_id": 187983
+        },
+        {
+          "Entry_id": 185872,
+          "relation": "CALL",
+          "Exit_id": 53807
+        },
+        {
+          "Entry_id": 118387,
+          "relation": "ALIAS",
+          "Exit_id": 53807
+        },
+        {
+          "Entry_id": 118387,
+          "relation": "CALL",
+          "Exit_id": 70601
+        }
+      ],
+      "ClassName": [
+        {
+          "id": 42614,
+          "value": "java.util.PriorityQueue"
+        },
+        {
+          "id": 43457,
+          "value": "java.util.PriorityQueue"
+        },
+        {
+          "id": 160507,
+          "value": "java.util.PriorityQueue"
+        },
+        {
+          "id": 4513,
+          "value": "java.util.PriorityQueue"
+        },
+        {
+          "id": 189104,
+          "value": "java.util.Comparator"
+        },
+        {
+          "id": 75978,
+          "value": "org.apache.commons.collections4.comparators.FixedOrderComparator"
+        },
+        {
+          "id": 187983,
+          "value": "java.util.Map"
+        },
+        {
+          "id": 185872,
+          "value": "org.apache.commons.collections4.map.DefaultedMap"
+        },
+        {
+          "id": 53807,
+          "value": "org.apache.commons.collections4.Transformer"
+        },
+        {
+          "id": 118387,
+          "value": "org.apache.commons.collections4.functors.InvokerTransformer"
+        },
+        {
+          "id": 70601,
+          "value": "java.lang.reflect.Method"
+        }
+      ],
+      "MethodName": [
+        {
+          "id": 42614,
+          "value": "readObject"
+        },
+        {
+          "id": 43457,
+          "value": "heapify"
+        },
+        {
+          "id": 160507,
+          "value": "siftDown"
+        },
+        {
+          "id": 4513,
+          "value": "siftDownUsingComparator"
+        },
+        {
+          "id": 189104,
+          "value": "compare"
+        },
+        {
+          "id": 75978,
+          "value": "compare"
+        },
+        {
+          "id": 187983,
+          "value": "get"
+        },
+        {
+          "id": 185872,
+          "value": "get"
+        },
+        {
+          "id": 53807,
+          "value": "transform"
+        },
+        {
+          "id": 118387,
+          "value": "transform"
+        },
+        {
+          "id": 70601,
+          "value": "invoke"
+        }
+      ]
+    }
+  ]
+}

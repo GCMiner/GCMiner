@@ -1,0 +1,126 @@
+{
+  "results": [
+    {
+      "sourceID": 90716,
+      "sinkID": 234701,
+      "ClassName": [
+        {
+          "id": 216544,
+          "value": "java.util.Hashtable"
+        },
+        {
+          "id": 42970,
+          "value": "java.util.Map"
+        },
+        {
+          "id": 88681,
+          "value": "org.apache.commons.collections.Transformer"
+        },
+        {
+          "id": 205157,
+          "value": "org.apache.commons.collections.map.LazyMap"
+        },
+        {
+          "id": 51893,
+          "value": "java.lang.Object"
+        },
+        {
+          "id": 252024,
+          "value": "java.util.AbstractMap"
+        },
+        {
+          "id": 241570,
+          "value": "org.apache.commons.collections.functors.InvokerTransformer"
+        },
+        {
+          "id": 90716,
+          "value": "java.util.Hashtable"
+        },
+        {
+          "id": 234701,
+          "value": "java.lang.Class"
+        }
+      ],
+      "MethodName": [
+        {
+          "id": 216544,
+          "value": "reconstitutionPut"
+        },
+        {
+          "id": 42970,
+          "value": "get"
+        },
+        {
+          "id": 88681,
+          "value": "transform"
+        },
+        {
+          "id": 205157,
+          "value": "get"
+        },
+        {
+          "id": 51893,
+          "value": "equals"
+        },
+        {
+          "id": 252024,
+          "value": "equals"
+        },
+        {
+          "id": 241570,
+          "value": "transform"
+        },
+        {
+          "id": 90716,
+          "value": "readObject"
+        },
+        {
+          "id": 234701,
+          "value": "getMethod"
+        }
+      ],
+      "Edges": [
+        {
+          "entry_id": 90716,
+          "exit_id": 216544,
+          "edge": "CALL"
+        },
+        {
+          "entry_id": 216544,
+          "exit_id": 51893,
+          "edge": "CALL"
+        },
+        {
+          "entry_id": 51893,
+          "exit_id": 252024,
+          "edge": "ALIAS"
+        },
+        {
+          "entry_id": 252024,
+          "exit_id": 42970,
+          "edge": "CALL"
+        },
+        {
+          "entry_id": 42970,
+          "exit_id": 205157,
+          "edge": "ALIAS"
+        },
+        {
+          "entry_id": 205157,
+          "exit_id": 88681,
+          "edge": "CALL"
+        },
+        {
+          "entry_id": 88681,
+          "exit_id": 241570,
+          "edge": "ALIAS"
+        },
+        {
+          "entry_id": 241570,
+          "exit_id": 234701,
+          "edge": "CALL"
+        }
+      ]
+    }
+  ]
+}

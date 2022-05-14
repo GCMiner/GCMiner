@@ -1,0 +1,48 @@
+{
+  "results": [
+    {
+      "sourceID": 81577,
+      "sinkID": 259839,
+      "ClassName": [
+        {
+          "id": 81577,
+          "value": "com.sun.rowset.JdbcRowSetImpl"
+        },
+        {
+          "id": 111125,
+          "value": "com.sun.rowset.JdbcRowSetImpl"
+        },
+        {
+          "id": 259839,
+          "value": "javax.naming.Context"
+        }
+      ],
+      "MethodName": [
+        {
+          "id": 81577,
+          "value": "setAutoCommit"
+        },
+        {
+          "id": 111125,
+          "value": "connect"
+        },
+        {
+          "id": 259839,
+          "value": "lookup"
+        }
+      ],
+      "Edges": [
+        {
+          "entry_id": 81577,
+          "exit_id": 111125,
+          "edge": "CALL"
+        },
+        {
+          "entry_id": 111125,
+          "exit_id": 259839,
+          "edge": "CALL"
+        }
+      ]
+    }
+  ]
+}

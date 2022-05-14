@@ -1,0 +1,807 @@
+{
+  "results": [
+    {
+      "sourceID": 10956,
+      "sinkID": 16261,
+      "ClassName": [
+        {
+          "id": 10956,
+          "value": "java.io.ObjectStreamClass"
+        },
+        {
+          "id": 16261,
+          "value": "java.io.ObjectStreamClass"
+        },
+        {
+          "id": 234144,
+          "value": "java.io.ObjectStreamClass"
+        }
+      ],
+      "MethodName": [
+        {
+          "id": 10956,
+          "value": "getClassDataLayout"
+        },
+        {
+          "id": 16261,
+          "value": "lookup"
+        },
+        {
+          "id": 234144,
+          "value": "getClassDataLayout0"
+        }
+      ],
+      "Edges": [
+        {
+          "entry_id": 10956,
+          "exit_id": 234144,
+          "edge": "CALL"
+        },
+        {
+          "entry_id": 234144,
+          "exit_id": 16261,
+          "edge": "CALL"
+        }
+      ]
+    },
+    {
+      "sourceID": 234144,
+      "sinkID": 16261,
+      "ClassName": [
+        {
+          "id": 16261,
+          "value": "java.io.ObjectStreamClass"
+        },
+        {
+          "id": 234144,
+          "value": "java.io.ObjectStreamClass"
+        }
+      ],
+      "MethodName": [
+        {
+          "id": 16261,
+          "value": "lookup"
+        },
+        {
+          "id": 234144,
+          "value": "getClassDataLayout0"
+        }
+      ],
+      "Edges": [
+        {
+          "entry_id": 234144,
+          "exit_id": 16261,
+          "edge": "CALL"
+        }
+      ]
+    },
+    {
+      "sourceID": 234144,
+      "sinkID": 16261,
+      "ClassName": [
+        {
+          "id": 16261,
+          "value": "java.io.ObjectStreamClass"
+        },
+        {
+          "id": 67335,
+          "value": "java.io.ObjectStreamClass"
+        },
+        {
+          "id": 15352,
+          "value": "java.io.ObjectStreamClass"
+        },
+        {
+          "id": 234144,
+          "value": "java.io.ObjectStreamClass"
+        }
+      ],
+      "MethodName": [
+        {
+          "id": 16261,
+          "value": "lookup"
+        },
+        {
+          "id": 67335,
+          "value": "initNonProxy"
+        },
+        {
+          "id": 15352,
+          "value": "getVariantFor"
+        },
+        {
+          "id": 234144,
+          "value": "getClassDataLayout0"
+        }
+      ],
+      "Edges": [
+        {
+          "entry_id": 234144,
+          "exit_id": 15352,
+          "edge": "CALL"
+        },
+        {
+          "entry_id": 15352,
+          "exit_id": 67335,
+          "edge": "CALL"
+        },
+        {
+          "entry_id": 67335,
+          "exit_id": 16261,
+          "edge": "CALL"
+        }
+      ]
+    },
+    {
+      "sourceID": 234144,
+      "sinkID": 16261,
+      "ClassName": [
+        {
+          "id": 16261,
+          "value": "java.io.ObjectStreamClass"
+        },
+        {
+          "id": 15352,
+          "value": "java.io.ObjectStreamClass"
+        },
+        {
+          "id": 234144,
+          "value": "java.io.ObjectStreamClass"
+        },
+        {
+          "id": 35769,
+          "value": "java.io.ObjectStreamClass"
+        }
+      ],
+      "MethodName": [
+        {
+          "id": 16261,
+          "value": "lookup"
+        },
+        {
+          "id": 15352,
+          "value": "getVariantFor"
+        },
+        {
+          "id": 234144,
+          "value": "getClassDataLayout0"
+        },
+        {
+          "id": 35769,
+          "value": "initProxy"
+        }
+      ],
+      "Edges": [
+        {
+          "entry_id": 234144,
+          "exit_id": 15352,
+          "edge": "CALL"
+        },
+        {
+          "entry_id": 15352,
+          "exit_id": 35769,
+          "edge": "CALL"
+        },
+        {
+          "entry_id": 35769,
+          "exit_id": 16261,
+          "edge": "CALL"
+        }
+      ]
+    },
+    {
+      "sourceID": 226383,
+      "sinkID": 29635,
+      "ClassName": [
+        {
+          "id": 226383,
+          "value": "com.sun.rowset.JdbcRowSetImpl"
+        },
+        {
+          "id": 111125,
+          "value": "com.sun.rowset.JdbcRowSetImpl"
+        },
+        {
+          "id": 29635,
+          "value": "com.sun.jndi.toolkit.dir.HierMemDirCtx"
+        },
+        {
+          "id": 259839,
+          "value": "javax.naming.Context"
+        }
+      ],
+      "MethodName": [
+        {
+          "id": 226383,
+          "value": "getDatabaseMetaData"
+        },
+        {
+          "id": 111125,
+          "value": "connect"
+        },
+        {
+          "id": 29635,
+          "value": "lookup"
+        },
+        {
+          "id": 259839,
+          "value": "lookup"
+        }
+      ],
+      "Edges": [
+        {
+          "entry_id": 226383,
+          "exit_id": 111125,
+          "edge": "CALL"
+        },
+        {
+          "entry_id": 111125,
+          "exit_id": 259839,
+          "edge": "CALL"
+        },
+        {
+          "entry_id": 259839,
+          "exit_id": 29635,
+          "edge": "ALIAS"
+        }
+      ]
+    },
+    {
+      "sourceID": 226383,
+      "sinkID": 29833,
+      "ClassName": [
+        {
+          "id": 226383,
+          "value": "com.sun.rowset.JdbcRowSetImpl"
+        },
+        {
+          "id": 111125,
+          "value": "com.sun.rowset.JdbcRowSetImpl"
+        },
+        {
+          "id": 29833,
+          "value": "com.sun.jndi.ldap.LdapReferralContext"
+        },
+        {
+          "id": 259839,
+          "value": "javax.naming.Context"
+        }
+      ],
+      "MethodName": [
+        {
+          "id": 226383,
+          "value": "getDatabaseMetaData"
+        },
+        {
+          "id": 111125,
+          "value": "connect"
+        },
+        {
+          "id": 29833,
+          "value": "lookup"
+        },
+        {
+          "id": 259839,
+          "value": "lookup"
+        }
+      ],
+      "Edges": [
+        {
+          "entry_id": 226383,
+          "exit_id": 111125,
+          "edge": "CALL"
+        },
+        {
+          "entry_id": 111125,
+          "exit_id": 259839,
+          "edge": "CALL"
+        },
+        {
+          "entry_id": 259839,
+          "exit_id": 29833,
+          "edge": "ALIAS"
+        }
+      ]
+    },
+    {
+      "sourceID": 226383,
+      "sinkID": 67221,
+      "ClassName": [
+        {
+          "id": 67221,
+          "value": "com.sun.jndi.url.ldap.ldapURLContext"
+        },
+        {
+          "id": 226383,
+          "value": "com.sun.rowset.JdbcRowSetImpl"
+        },
+        {
+          "id": 111125,
+          "value": "com.sun.rowset.JdbcRowSetImpl"
+        },
+        {
+          "id": 259839,
+          "value": "javax.naming.Context"
+        }
+      ],
+      "MethodName": [
+        {
+          "id": 67221,
+          "value": "lookup"
+        },
+        {
+          "id": 226383,
+          "value": "getDatabaseMetaData"
+        },
+        {
+          "id": 111125,
+          "value": "connect"
+        },
+        {
+          "id": 259839,
+          "value": "lookup"
+        }
+      ],
+      "Edges": [
+        {
+          "entry_id": 226383,
+          "exit_id": 111125,
+          "edge": "CALL"
+        },
+        {
+          "entry_id": 111125,
+          "exit_id": 259839,
+          "edge": "CALL"
+        },
+        {
+          "entry_id": 259839,
+          "exit_id": 67221,
+          "edge": "ALIAS"
+        }
+      ]
+    },
+    {
+      "sourceID": 226383,
+      "sinkID": 79815,
+      "ClassName": [
+        {
+          "id": 226383,
+          "value": "com.sun.rowset.JdbcRowSetImpl"
+        },
+        {
+          "id": 111125,
+          "value": "com.sun.rowset.JdbcRowSetImpl"
+        },
+        {
+          "id": 79815,
+          "value": "javax.naming.spi.ContinuationContext"
+        },
+        {
+          "id": 259839,
+          "value": "javax.naming.Context"
+        }
+      ],
+      "MethodName": [
+        {
+          "id": 226383,
+          "value": "getDatabaseMetaData"
+        },
+        {
+          "id": 111125,
+          "value": "connect"
+        },
+        {
+          "id": 79815,
+          "value": "lookup"
+        },
+        {
+          "id": 259839,
+          "value": "lookup"
+        }
+      ],
+      "Edges": [
+        {
+          "entry_id": 226383,
+          "exit_id": 111125,
+          "edge": "CALL"
+        },
+        {
+          "entry_id": 111125,
+          "exit_id": 259839,
+          "edge": "CALL"
+        },
+        {
+          "entry_id": 259839,
+          "exit_id": 79815,
+          "edge": "ALIAS"
+        }
+      ]
+    },
+    {
+      "sourceID": 226383,
+      "sinkID": 84777,
+      "ClassName": [
+        {
+          "id": 226383,
+          "value": "com.sun.rowset.JdbcRowSetImpl"
+        },
+        {
+          "id": 111125,
+          "value": "com.sun.rowset.JdbcRowSetImpl"
+        },
+        {
+          "id": 84777,
+          "value": "com.sun.jndi.cosnaming.CNCtx"
+        },
+        {
+          "id": 259839,
+          "value": "javax.naming.Context"
+        }
+      ],
+      "MethodName": [
+        {
+          "id": 226383,
+          "value": "getDatabaseMetaData"
+        },
+        {
+          "id": 111125,
+          "value": "connect"
+        },
+        {
+          "id": 84777,
+          "value": "lookup"
+        },
+        {
+          "id": 259839,
+          "value": "lookup"
+        }
+      ],
+      "Edges": [
+        {
+          "entry_id": 226383,
+          "exit_id": 111125,
+          "edge": "CALL"
+        },
+        {
+          "entry_id": 111125,
+          "exit_id": 259839,
+          "edge": "CALL"
+        },
+        {
+          "entry_id": 259839,
+          "exit_id": 84777,
+          "edge": "ALIAS"
+        }
+      ]
+    },
+    {
+      "sourceID": 226383,
+      "sinkID": 120319,
+      "ClassName": [
+        {
+          "id": 226383,
+          "value": "com.sun.rowset.JdbcRowSetImpl"
+        },
+        {
+          "id": 111125,
+          "value": "com.sun.rowset.JdbcRowSetImpl"
+        },
+        {
+          "id": 120319,
+          "value": "com.sun.jndi.toolkit.url.GenericURLContext"
+        },
+        {
+          "id": 259839,
+          "value": "javax.naming.Context"
+        }
+      ],
+      "MethodName": [
+        {
+          "id": 226383,
+          "value": "getDatabaseMetaData"
+        },
+        {
+          "id": 111125,
+          "value": "connect"
+        },
+        {
+          "id": 120319,
+          "value": "lookup"
+        },
+        {
+          "id": 259839,
+          "value": "lookup"
+        }
+      ],
+      "Edges": [
+        {
+          "entry_id": 226383,
+          "exit_id": 111125,
+          "edge": "CALL"
+        },
+        {
+          "entry_id": 111125,
+          "exit_id": 259839,
+          "edge": "CALL"
+        },
+        {
+          "entry_id": 259839,
+          "exit_id": 120319,
+          "edge": "ALIAS"
+        }
+      ]
+    },
+    {
+      "sourceID": 226383,
+      "sinkID": 225365,
+      "ClassName": [
+        {
+          "id": 226383,
+          "value": "com.sun.rowset.JdbcRowSetImpl"
+        },
+        {
+          "id": 111125,
+          "value": "com.sun.rowset.JdbcRowSetImpl"
+        },
+        {
+          "id": 225365,
+          "value": "com.sun.jndi.rmi.registry.RegistryContext"
+        },
+        {
+          "id": 259839,
+          "value": "javax.naming.Context"
+        }
+      ],
+      "MethodName": [
+        {
+          "id": 226383,
+          "value": "getDatabaseMetaData"
+        },
+        {
+          "id": 111125,
+          "value": "connect"
+        },
+        {
+          "id": 225365,
+          "value": "lookup"
+        },
+        {
+          "id": 259839,
+          "value": "lookup"
+        }
+      ],
+      "Edges": [
+        {
+          "entry_id": 226383,
+          "exit_id": 111125,
+          "edge": "CALL"
+        },
+        {
+          "entry_id": 111125,
+          "exit_id": 259839,
+          "edge": "CALL"
+        },
+        {
+          "entry_id": 259839,
+          "exit_id": 225365,
+          "edge": "ALIAS"
+        }
+      ]
+    },
+    {
+      "sourceID": 226383,
+      "sinkID": 228979,
+      "ClassName": [
+        {
+          "id": 226383,
+          "value": "com.sun.rowset.JdbcRowSetImpl"
+        },
+        {
+          "id": 111125,
+          "value": "com.sun.rowset.JdbcRowSetImpl"
+        },
+        {
+          "id": 228979,
+          "value": "javax.naming.InitialContext"
+        },
+        {
+          "id": 259839,
+          "value": "javax.naming.Context"
+        }
+      ],
+      "MethodName": [
+        {
+          "id": 226383,
+          "value": "getDatabaseMetaData"
+        },
+        {
+          "id": 111125,
+          "value": "connect"
+        },
+        {
+          "id": 228979,
+          "value": "lookup"
+        },
+        {
+          "id": 259839,
+          "value": "lookup"
+        }
+      ],
+      "Edges": [
+        {
+          "entry_id": 226383,
+          "exit_id": 111125,
+          "edge": "CALL"
+        },
+        {
+          "entry_id": 111125,
+          "exit_id": 259839,
+          "edge": "CALL"
+        },
+        {
+          "entry_id": 259839,
+          "exit_id": 228979,
+          "edge": "ALIAS"
+        }
+      ]
+    },
+    {
+      "sourceID": 226383,
+      "sinkID": 259839,
+      "ClassName": [
+        {
+          "id": 226383,
+          "value": "com.sun.rowset.JdbcRowSetImpl"
+        },
+        {
+          "id": 111125,
+          "value": "com.sun.rowset.JdbcRowSetImpl"
+        },
+        {
+          "id": 259839,
+          "value": "javax.naming.Context"
+        }
+      ],
+      "MethodName": [
+        {
+          "id": 226383,
+          "value": "getDatabaseMetaData"
+        },
+        {
+          "id": 111125,
+          "value": "connect"
+        },
+        {
+          "id": 259839,
+          "value": "lookup"
+        }
+      ],
+      "Edges": [
+        {
+          "entry_id": 226383,
+          "exit_id": 111125,
+          "edge": "CALL"
+        },
+        {
+          "entry_id": 111125,
+          "exit_id": 259839,
+          "edge": "CALL"
+        }
+      ]
+    },
+    {
+      "sourceID": 226383,
+      "sinkID": 263755,
+      "ClassName": [
+        {
+          "id": 226383,
+          "value": "com.sun.rowset.JdbcRowSetImpl"
+        },
+        {
+          "id": 111125,
+          "value": "com.sun.rowset.JdbcRowSetImpl"
+        },
+        {
+          "id": 263755,
+          "value": "com.sun.jndi.toolkit.ctx.PartialCompositeContext"
+        },
+        {
+          "id": 259839,
+          "value": "javax.naming.Context"
+        }
+      ],
+      "MethodName": [
+        {
+          "id": 226383,
+          "value": "getDatabaseMetaData"
+        },
+        {
+          "id": 111125,
+          "value": "connect"
+        },
+        {
+          "id": 263755,
+          "value": "lookup"
+        },
+        {
+          "id": 259839,
+          "value": "lookup"
+        }
+      ],
+      "Edges": [
+        {
+          "entry_id": 226383,
+          "exit_id": 111125,
+          "edge": "CALL"
+        },
+        {
+          "entry_id": 111125,
+          "exit_id": 259839,
+          "edge": "CALL"
+        },
+        {
+          "entry_id": 259839,
+          "exit_id": 263755,
+          "edge": "ALIAS"
+        }
+      ]
+    },
+    {
+      "sourceID": 140460,
+      "sinkID": 259839,
+      "ClassName": [
+        {
+          "id": 140460,
+          "value": "com.sun.rowset.JdbcRowSetImpl"
+        },
+        {
+          "id": 111125,
+          "value": "com.sun.rowset.JdbcRowSetImpl"
+        },
+        {
+          "id": 9390,
+          "value": "com.sun.rowset.JdbcRowSetImpl"
+        },
+        {
+          "id": 259839,
+          "value": "javax.naming.Context"
+        }
+      ],
+      "MethodName": [
+        {
+          "id": 140460,
+          "value": "getParameterMetaData"
+        },
+        {
+          "id": 111125,
+          "value": "connect"
+        },
+        {
+          "id": 9390,
+          "value": "prepare"
+        },
+        {
+          "id": 259839,
+          "value": "lookup"
+        }
+      ],
+      "Edges": [
+        {
+          "entry_id": 140460,
+          "exit_id": 9390,
+          "edge": "CALL"
+        },
+        {
+          "entry_id": 9390,
+          "exit_id": 111125,
+          "edge": "CALL"
+        },
+        {
+          "entry_id": 111125,
+          "exit_id": 259839,
+          "edge": "CALL"
+        }
+      ]
+    }
+  ]
+}

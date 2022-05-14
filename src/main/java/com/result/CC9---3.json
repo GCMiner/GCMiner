@@ -1,0 +1,409 @@
+{
+  "results": [
+    {
+      "sourceID": 90716,
+      "sinkID": 234701,
+      "ClassName": [
+        {
+          "id": 216544,
+          "value": "java.util.Hashtable"
+        },
+        {
+          "id": 42970,
+          "value": "java.util.Map"
+        },
+        {
+          "id": 88681,
+          "value": "org.apache.commons.collections.Transformer"
+        },
+        {
+          "id": 205157,
+          "value": "org.apache.commons.collections.map.LazyMap"
+        },
+        {
+          "id": 54498,
+          "value": "org.apache.commons.collections.keyvalue.TiedMapEntry"
+        },
+        {
+          "id": 241570,
+          "value": "org.apache.commons.collections.functors.InvokerTransformer"
+        },
+        {
+          "id": 90716,
+          "value": "java.util.Hashtable"
+        },
+        {
+          "id": 234701,
+          "value": "java.lang.Class"
+        },
+        {
+          "id": 250869,
+          "value": "org.apache.commons.collections.keyvalue.TiedMapEntry"
+        },
+        {
+          "id": 3150,
+          "value": "java.lang.Object"
+        }
+      ],
+      "MethodName": [
+        {
+          "id": 216544,
+          "value": "reconstitutionPut"
+        },
+        {
+          "id": 42970,
+          "value": "get"
+        },
+        {
+          "id": 88681,
+          "value": "transform"
+        },
+        {
+          "id": 205157,
+          "value": "get"
+        },
+        {
+          "id": 54498,
+          "value": "getValue"
+        },
+        {
+          "id": 241570,
+          "value": "transform"
+        },
+        {
+          "id": 90716,
+          "value": "readObject"
+        },
+        {
+          "id": 234701,
+          "value": "getMethod"
+        },
+        {
+          "id": 250869,
+          "value": "hashCode"
+        },
+        {
+          "id": 3150,
+          "value": "hashCode"
+        }
+      ],
+      "Edges": [
+        {
+          "entry_id": 90716,
+          "exit_id": 216544,
+          "edge": "CALL"
+        },
+        {
+          "entry_id": 216544,
+          "exit_id": 3150,
+          "edge": "CALL"
+        },
+        {
+          "entry_id": 3150,
+          "exit_id": 250869,
+          "edge": "ALIAS"
+        },
+        {
+          "entry_id": 250869,
+          "exit_id": 54498,
+          "edge": "CALL"
+        },
+        {
+          "entry_id": 54498,
+          "exit_id": 42970,
+          "edge": "CALL"
+        },
+        {
+          "entry_id": 42970,
+          "exit_id": 205157,
+          "edge": "ALIAS"
+        },
+        {
+          "entry_id": 205157,
+          "exit_id": 88681,
+          "edge": "CALL"
+        },
+        {
+          "entry_id": 88681,
+          "exit_id": 241570,
+          "edge": "ALIAS"
+        },
+        {
+          "entry_id": 241570,
+          "exit_id": 234701,
+          "edge": "CALL"
+        }
+      ]
+    },
+    {
+      "sourceID": 90716,
+      "sinkID": 178442,
+      "ClassName": [
+        {
+          "id": 216544,
+          "value": "java.util.Hashtable"
+        },
+        {
+          "id": 42970,
+          "value": "java.util.Map"
+        },
+        {
+          "id": 88681,
+          "value": "org.apache.commons.collections.Transformer"
+        },
+        {
+          "id": 205157,
+          "value": "org.apache.commons.collections.map.LazyMap"
+        },
+        {
+          "id": 54498,
+          "value": "org.apache.commons.collections.keyvalue.TiedMapEntry"
+        },
+        {
+          "id": 241570,
+          "value": "org.apache.commons.collections.functors.InvokerTransformer"
+        },
+        {
+          "id": 90716,
+          "value": "java.util.Hashtable"
+        },
+        {
+          "id": 250869,
+          "value": "org.apache.commons.collections.keyvalue.TiedMapEntry"
+        },
+        {
+          "id": 3150,
+          "value": "java.lang.Object"
+        },
+        {
+          "id": 178442,
+          "value": "java.lang.reflect.Method"
+        }
+      ],
+      "MethodName": [
+        {
+          "id": 216544,
+          "value": "reconstitutionPut"
+        },
+        {
+          "id": 42970,
+          "value": "get"
+        },
+        {
+          "id": 88681,
+          "value": "transform"
+        },
+        {
+          "id": 205157,
+          "value": "get"
+        },
+        {
+          "id": 54498,
+          "value": "getValue"
+        },
+        {
+          "id": 241570,
+          "value": "transform"
+        },
+        {
+          "id": 90716,
+          "value": "readObject"
+        },
+        {
+          "id": 250869,
+          "value": "hashCode"
+        },
+        {
+          "id": 3150,
+          "value": "hashCode"
+        },
+        {
+          "id": 178442,
+          "value": "invoke"
+        }
+      ],
+      "Edges": [
+        {
+          "entry_id": 90716,
+          "exit_id": 216544,
+          "edge": "CALL"
+        },
+        {
+          "entry_id": 216544,
+          "exit_id": 3150,
+          "edge": "CALL"
+        },
+        {
+          "entry_id": 3150,
+          "exit_id": 250869,
+          "edge": "ALIAS"
+        },
+        {
+          "entry_id": 250869,
+          "exit_id": 54498,
+          "edge": "CALL"
+        },
+        {
+          "entry_id": 54498,
+          "exit_id": 42970,
+          "edge": "CALL"
+        },
+        {
+          "entry_id": 42970,
+          "exit_id": 205157,
+          "edge": "ALIAS"
+        },
+        {
+          "entry_id": 205157,
+          "exit_id": 88681,
+          "edge": "CALL"
+        },
+        {
+          "entry_id": 88681,
+          "exit_id": 241570,
+          "edge": "ALIAS"
+        },
+        {
+          "entry_id": 241570,
+          "exit_id": 178442,
+          "edge": "CALL"
+        }
+      ]
+    },
+    {
+      "sourceID": 90716,
+      "sinkID": 92068,
+      "ClassName": [
+        {
+          "id": 216544,
+          "value": "java.util.Hashtable"
+        },
+        {
+          "id": 42970,
+          "value": "java.util.Map"
+        },
+        {
+          "id": 88681,
+          "value": "org.apache.commons.collections.Transformer"
+        },
+        {
+          "id": 205157,
+          "value": "org.apache.commons.collections.map.LazyMap"
+        },
+        {
+          "id": 71854,
+          "value": "org.apache.commons.collections.functors.InstantiateTransformer"
+        },
+        {
+          "id": 92068,
+          "value": "java.lang.reflect.Constructor"
+        },
+        {
+          "id": 54498,
+          "value": "org.apache.commons.collections.keyvalue.TiedMapEntry"
+        },
+        {
+          "id": 90716,
+          "value": "java.util.Hashtable"
+        },
+        {
+          "id": 250869,
+          "value": "org.apache.commons.collections.keyvalue.TiedMapEntry"
+        },
+        {
+          "id": 3150,
+          "value": "java.lang.Object"
+        }
+      ],
+      "MethodName": [
+        {
+          "id": 216544,
+          "value": "reconstitutionPut"
+        },
+        {
+          "id": 42970,
+          "value": "get"
+        },
+        {
+          "id": 88681,
+          "value": "transform"
+        },
+        {
+          "id": 205157,
+          "value": "get"
+        },
+        {
+          "id": 71854,
+          "value": "transform"
+        },
+        {
+          "id": 92068,
+          "value": "newInstance"
+        },
+        {
+          "id": 54498,
+          "value": "getValue"
+        },
+        {
+          "id": 90716,
+          "value": "readObject"
+        },
+        {
+          "id": 250869,
+          "value": "hashCode"
+        },
+        {
+          "id": 3150,
+          "value": "hashCode"
+        }
+      ],
+      "Edges": [
+        {
+          "entry_id": 90716,
+          "exit_id": 216544,
+          "edge": "CALL"
+        },
+        {
+          "entry_id": 216544,
+          "exit_id": 3150,
+          "edge": "CALL"
+        },
+        {
+          "entry_id": 3150,
+          "exit_id": 250869,
+          "edge": "ALIAS"
+        },
+        {
+          "entry_id": 250869,
+          "exit_id": 54498,
+          "edge": "CALL"
+        },
+        {
+          "entry_id": 54498,
+          "exit_id": 42970,
+          "edge": "CALL"
+        },
+        {
+          "entry_id": 42970,
+          "exit_id": 205157,
+          "edge": "ALIAS"
+        },
+        {
+          "entry_id": 205157,
+          "exit_id": 88681,
+          "edge": "CALL"
+        },
+        {
+          "entry_id": 88681,
+          "exit_id": 71854,
+          "edge": "ALIAS"
+        },
+        {
+          "entry_id": 71854,
+          "exit_id": 92068,
+          "edge": "CALL"
+        }
+      ]
+    }
+  ]
+}

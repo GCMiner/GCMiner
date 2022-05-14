@@ -1,0 +1,274 @@
+  {
+  "results": [
+    {
+      "SourceID": 58,
+      "Sink": 68,
+      "Edges": [
+        {
+          "Entry_id": 58,
+          "relation": "CALL",
+          "Exit_id": 61
+        },
+        {
+          "Entry_id": 61,
+          "relation": "CALL",
+          "Exit_id": 62
+        },
+        {
+          "Entry_id": 62,
+          "relation": "CALL",
+          "Exit_id": 63
+        },
+        {
+          "Entry_id": 63,
+          "relation": "CALL",
+          "Exit_id": 64
+        },
+        {
+          "Entry_id": 64,
+          "relation": "ALIAS",
+          "Exit_id": 65
+        },
+        {
+          "Entry_id": 65,
+          "relation": "CALL",
+          "Exit_id": 66
+        },
+        {
+          "Entry_id": 66,
+          "relation": "ALIAS",
+          "Exit_id": 67
+        },
+        {
+          "Entry_id": 67,
+          "relation": "CALL",
+          "Exit_id": 68
+        }
+      ],
+      "ClassName": [
+        {
+          "id": 58,
+          "value": "java.util.PriorityQueue"
+        },
+        {
+          "id": 61,
+          "value": "java.util.PriorityQueue"
+        },
+        {
+          "id": 62,
+          "value": "java.util.PriorityQueue"
+        },
+        {
+          "id": 63,
+          "value": "java.util.PriorityQueue"
+        },
+        {
+          "id": 64,
+          "value": "java.util.Comparator"
+        },
+        {
+          "id": 65,
+          "value": "org.apache.commons.collections4.comparators.TransformingComparator"
+        },
+        {
+          "id": 66,
+          "value": "org.apache.commons.collections4.Transformer"
+        },
+        {
+          "id": 67,
+          "value": "org.apache.commons.collections4.functors.InvokerTransformer"
+        },
+        {
+          "id": 68,
+          "value": "java.lang.reflect.Method"
+        }
+      ],
+      "MethodName": [
+        {
+          "id": 58,
+          "value": "readObject"
+        },
+        {
+          "id": 61,
+          "value": "heapify"
+        },
+        {
+          "id": 62,
+          "value": "siftDown"
+        },
+        {
+          "id": 63,
+          "value": "siftDownUsingComparator"
+        },
+        {
+          "id": 64,
+          "value": "compare"
+        },
+        {
+          "id": 65,
+          "value": "compare"
+        },
+        {
+          "id": 66,
+          "value": "transform"
+        },
+        {
+          "id": 67,
+          "value": "transform"
+        },
+        {
+          "id": 68,
+          "value": "invoke"
+        }
+      ]
+    },
+    {
+      "SourceID": 58,
+      "Sink": 70,
+      "Edges": [
+        {
+          "Entry_id": 58,
+          "relation": "CALL",
+          "Exit_id": 61
+        },
+        {
+          "Entry_id": 61,
+          "relation": "CALL",
+          "Exit_id": 62
+        },
+        {
+          "Entry_id": 62,
+          "relation": "CALL",
+          "Exit_id": 63
+        },
+        {
+          "Entry_id": 63,
+          "relation": "CALL",
+          "Exit_id": 64
+        },
+        {
+          "Entry_id": 64,
+          "relation": "ALIAS",
+          "Exit_id": 65
+        },
+        {
+          "Entry_id": 65,
+          "relation": "CALL",
+          "Exit_id": 66
+        },
+        {
+          "Entry_id": 66,
+          "relation": "ALIAS",
+          "Exit_id": 67
+        },
+        {
+          "Entry_id": 67,
+          "relation": "CALL",
+          "Exit_id": 68
+        },
+        {
+          "Entry_id": 68,
+          "relation": "ALIAS",
+          "Exit_id": 69
+        },
+        {
+          "Entry_id": 69,
+          "relation": "CALL",
+          "Exit_id": 70
+        }
+      ],
+      "ClassName": [
+        {
+          "id": 58,
+          "value": "java.util.PriorityQueue"
+        },
+        {
+          "id": 61,
+          "value": "java.util.PriorityQueue"
+        },
+        {
+          "id": 62,
+          "value": "java.util.PriorityQueue"
+        },
+        {
+          "id": 63,
+          "value": "java.util.PriorityQueue"
+        },
+        {
+          "id": 64,
+          "value": "java.lang.Comparable"
+        },
+        {
+          "id": 65,
+          "value": "javax.naming.ldap.LdapName"
+        },
+        {
+          "id": 66,
+          "value": "java.util.List"
+        },
+        {
+          "id": 67,
+          "value": "org.apache.commons.collections4.list.LazyList"
+        },
+        {
+          "id": 68,
+          "value": "org.apache.commons.collections4.Factory"
+        },
+        {
+          "id": 69,
+          "value": "org.apache.commons.collections4.functors.PrototypeFactory$PrototypeCloneFactory"
+        },
+        {
+          "id": 70,
+          "value": "java.lang.reflect.Method"
+        }
+      ],
+      "MethodName": [
+        {
+          "id": 58,
+          "value": "readObject"
+        },
+        {
+          "id": 61,
+          "value": "heapify"
+        },
+        {
+          "id": 62,
+          "value": "siftDown"
+        },
+        {
+          "id": 63,
+          "value": "siftDownComparable"
+        },
+        {
+          "id": 64,
+          "value": "compareTo"
+        },
+        {
+          "id": 65,
+          "value": "compareTo"
+        },
+        {
+          "id": 66,
+          "value": "get"
+        },
+        {
+          "id": 67,
+          "value": "get"
+        },
+        {
+          "id": 68,
+          "value": "create"
+        },
+        {
+          "id": 69,
+          "value": "create"
+        },
+        {
+          "id": 70,
+          "value": "invoke"
+        }
+      ]
+    }
+  ]
+}

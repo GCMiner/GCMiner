@@ -1,0 +1,74 @@
+{
+  "results": [
+    {
+      "sourceID": 102805,
+      "sinkID": 26697,
+      "ClassName": [
+        {
+          "id": 102805,
+          "value": "com.mchange.v2.c3p0.impl.PoolBackedDataSourceBase"
+        },
+        {
+          "id": 78439,
+          "value": "javax.naming.Context"
+        },
+        {
+          "id": 116897,
+          "value": "com.mchange.v2.naming.ReferenceIndirector$ReferenceSerialized"
+        },
+        {
+          "id": 26697,
+          "value": "com.sun.jndi.rmi.registry.RegistryContext"
+        },
+        {
+          "id": 46174,
+          "value": "com.mchange.v2.ser.IndirectlySerialized"
+        }
+      ],
+      "MethodName": [
+        {
+          "id": 102805,
+          "value": "readObject"
+        },
+        {
+          "id": 78439,
+          "value": "lookup"
+        },
+        {
+          "id": 116897,
+          "value": "getObject"
+        },
+        {
+          "id": 26697,
+          "value": "lookup"
+        },
+        {
+          "id": 46174,
+          "value": "getObject"
+        }
+      ],
+      "Edges": [
+        {
+          "entry_id": 102805,
+          "exit_id": 46174,
+          "edge": "CALL"
+        },
+        {
+          "entry_id": 46174,
+          "exit_id": 116897,
+          "edge": "ALIAS"
+        },
+        {
+          "entry_id": 116897,
+          "exit_id": 78439,
+          "edge": "CALL"
+        },
+        {
+          "entry_id": 78439,
+          "exit_id": 26697,
+          "edge": "ALIAS"
+        }
+      ]
+    }
+  ]
+}

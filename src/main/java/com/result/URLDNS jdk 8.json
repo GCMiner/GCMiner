@@ -1,0 +1,48 @@
+{
+  "results": [
+    {
+      "sourceID": 90347,
+      "sinkID": 87506,
+      "ClassName": [
+        {
+          "id": 87506,
+          "value": "java.lang.Object"
+        },
+        {
+          "id": 90347,
+          "value": "java.util.HashMap"
+        },
+        {
+          "id": 128669,
+          "value": "java.util.HashMap"
+        }
+      ],
+      "MethodName": [
+        {
+          "id": 87506,
+          "value": "hashCode"
+        },
+        {
+          "id": 90347,
+          "value": "readObject"
+        },
+        {
+          "id": 128669,
+          "value": "hash"
+        }
+      ],
+      "Edges": [
+        {
+          "entry_id": 90347,
+          "exit_id": 128669,
+          "edge": "CALL"
+        },
+        {
+          "entry_id": 128669,
+          "exit_id": 87506,
+          "edge": "CALL"
+        }
+      ]
+    }
+  ]
+}
