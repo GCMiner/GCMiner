@@ -1,7 +1,9 @@
 <a name="JdLRz"></a>
-# GCMiner: Improving Java Deserialization Gadget Chain Mining via Reflection-Guided Exploit Generation
+# Improving Java Deserialization Gadget Chain Mining via Reflection-Guided Exploit Generation
 
-Java deserialization has been shown to introduce security-critical vulnerabilities, which can lead to serious consequences due to its highly dynamic features. To alleviate this problem, existing techniques have been proposed to statically analyze the call relations to identify deserialization-related method invocations for automatically mining exploitable gadget chains. Despite being effective, analyzing only explicit call relations will miss a number of potential gadget chains, for example, some gadget chains are formed due to the dynamic behaviors (e.g., reflection invocation) in the program. Through an empirical study on 86 gadget chains from one widely-used Java deserialization collection and 18 real-world Java applications, we found that: 1) the new set of sources and sinks can help identify more potential gadget chains; and 2) a large number of gadget chain construction and exploitation rely on the reflection invocation to homonymous methods.<br />Motivated by our findings, we propose a novel gadget chain mining technique named GCMiner. First, GCMiner constructs a joint graph structure, Deserialization-Aware Code Property Graph (DA-CPG), to identify deserialization-related method invocations, and retrieves suspicious gadget chains through customized query scripts. Then, GCMiner uses a reflection-guided exploit generation strategy to produce valid object inputs to verify the exploitability of identified gadget chains. The evaluation results show that GCMiner significantly outperforms state-of-the-art tools in chains identification and verification, and discovers 54 known gadget chains that cannot be identified by the baseline approaches.
+Java (de)serialization is prone to causing security-critical vulnerabilities that attackers can invoke existing methods (gadgets) in an application's scope to construct a gadget chain to perform malicious behaviors. Several techniques have been proposed to statically identify suspicious gadget chains and dynamically generate injection objects for fuzzing. However, due to their incomplete support for dynamic program features (e.g., Java runtime polymorphism) and ineffective injection object generation for fuzzing, the existing techniques are still far from satisfactory.
+
+In this paper, we first performed an empirical study to investigate the characteristics of Java deserialization vulnerabilities based on our manually collected 86 publicly known gadget chains. The empirical results show that 1) Java deserialization gadgets are usually introduced by abusing runtime polymorphism, which enables attackers to reuse serializable overriding methods; and 2) attackers usually invoke exploitable overriding methods (gadgets) via dynamic binding to generate injection objects for gadget chain construction. Based on our empirical findings, we propose a novel gadget chain mining approach, GCMiner, which captures both explicit and implicit method calls to identify more gadget chains, and adopts an overriding-guided object generation approach to generate valid injection objects for fuzzing. The evaluation results show that GCMiner significantly outperforms the state-of-the-art techniques, and discovers 56 unique gadget chains that cannot be identified by the baseline approaches.
 <a name="ScN0I"></a>
 ## Prerequisites
 
@@ -43,7 +45,7 @@ This step is necessary for the static analysis to construct Deserialization-Awar
 │   │   └── GetChainsFromNeo4j.java   <- Loading graph data from Neo4j.
 │   └── com                           <- Running scripts.
 │       ├── result                    <- Collection of gadget chains in our benchmark.
-│       ├── ObjectGenerator.java      <- A customized generator for object generation.
+│       ├── ExploitGenerator.java     <- A customized generator for object generation.
 │       ├── ObjectLogic.java          <- Verify whether the sink method is reached.
 │       └── ObjectTest.java           <- Main script files.
 │
