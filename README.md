@@ -1,5 +1,5 @@
 <a name="JdLRz"></a>
-# Improving Java Deserialization Gadget Chain Mining via Reflection-Guided Exploit Generation
+# Improving Java Deserialization Gadget Chain Mining via Overriding-Guided Object Generation
 
 Java (de)serialization is prone to causing security-critical vulnerabilities that attackers can invoke existing methods (gadgets) in an application's scope to construct a gadget chain to perform malicious behaviors. Several techniques have been proposed to statically identify suspicious gadget chains and dynamically generate injection objects for fuzzing. However, due to their incomplete support for dynamic program features (e.g., Java runtime polymorphism) and ineffective injection object generation for fuzzing, the existing techniques are still far from satisfactory.
 
